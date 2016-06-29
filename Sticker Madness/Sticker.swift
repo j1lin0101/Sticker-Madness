@@ -23,7 +23,9 @@ class Sticker: UIImageView, UIGestureRecognizerDelegate {
         let rotate = UIRotationGestureRecognizer(target: self, action: #selector(self.handleRotate(_:)))
         rotate.delegate = self
         self.addGestureRecognizer(rotate)
-        
+        let delete = UILongPressGestureRecognizer(target: self, action: #selector(self.longPressed(_:)))
+        delete.delegate = self
+        self.addGestureRecognizer(delete)
         
     }
     
@@ -63,5 +65,11 @@ class Sticker: UIImageView, UIGestureRecognizerDelegate {
     
     func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWithGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return true
+    }
+    
+    func longPressed(longPressGestureRecognizer: UILongPressGestureRecognizer){
+        if let view = longPressGestureRecognizer.view {
+            view.removeFromSuperview()
+        }
     }
 }

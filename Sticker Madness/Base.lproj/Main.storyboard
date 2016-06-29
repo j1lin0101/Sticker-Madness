@@ -44,7 +44,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUF-ia-ayA">
                                         <rect key="frame" x="0.0" y="0.0" width="126.5" height="60"/>
-                                        <state key="normal" image="eyeglasses1"/>
+                                        <state key="normal" image="dwi-glasses"/>
                                         <connections>
                                             <action selector="glassesPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZDg-0X-poE"/>
                                         </connections>
@@ -103,7 +103,7 @@
     <resources>
         <image name="camera" width="2400" height="2400"/>
         <image name="cigar" width="299" height="267"/>
-        <image name="eyeglasses1" width="342" height="144"/>
+        <image name="dwi-glasses" width="1360" height="765"/>
         <image name="hat1" width="332" height="205"/>
         <image name="mustache2" width="542" height="200"/>
         <image name="person filler" width="128" height="128"/>

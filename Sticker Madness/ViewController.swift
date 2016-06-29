@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func glassesPressed(sender: AnyObject) {
-        let glasses = Sticker(image: UIImage(named: "eyeglasses1"))
+        let glasses = Sticker(image: UIImage(named: "dwi-glasses"))
         self.view.addSubview(glasses)
     }
     
