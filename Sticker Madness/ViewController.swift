@@ -40,6 +40,11 @@ class ViewController: UIViewController {
         let glasses = Sticker(image: UIImage(named: "eyeglasses1"))
         self.view.addSubview(glasses)
     }
+    
+    @IBAction func cigarPressed(sender: AnyObject) {
+        let cigar = Sticker(image: UIImage(named: "cigar"))
+        self.view.addSubview(cigar)
+    }
 
 }
 

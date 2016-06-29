@@ -20,7 +20,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zcJ-Er-AOW" userLabel="Image Stack View">
                                 <rect key="frame" x="0.0" y="95" width="600" height="505"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="YLj-3z-8cF">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person filler" translatesAutoresizingMaskIntoConstraints="NO" id="YLj-3z-8cF">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="405"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdm-wm-mmt">
@@ -43,30 +43,39 @@
                                 <rect key="frame" x="10" y="30" width="580" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUF-ia-ayA">
-                                        <rect key="frame" x="0.0" y="0.0" width="177" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="126.5" height="60"/>
                                         <state key="normal" image="eyeglasses1"/>
                                         <connections>
                                             <action selector="glassesPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZDg-0X-poE"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rO2-2a-Mwd">
-                                        <rect key="frame" x="202" y="0.0" width="177" height="60"/>
+                                        <rect key="frame" x="151.5" y="0.0" width="126" height="60"/>
                                         <state key="normal" image="hat1"/>
                                         <connections>
                                             <action selector="hatPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dzI-VX-dqn"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCg-EA-5Eu">
-                                        <rect key="frame" x="404" y="0.0" width="177" height="60"/>
+                                        <rect key="frame" x="302.5" y="0.0" width="126.5" height="60"/>
                                         <state key="normal" image="mustache2"/>
                                         <connections>
                                             <action selector="mustachePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="phd-Pz-GMD"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGo-78-C6J">
+                                        <rect key="frame" x="454" y="0.0" width="126" height="60"/>
+                                        <state key="normal" title="Button" image="cigar"/>
+                                        <connections>
+                                            <action selector="cigarPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5ii-zj-gis"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="qCg-EA-5Eu" firstAttribute="width" secondItem="UUF-ia-ayA" secondAttribute="width" id="bt8-he-pbX"/>
-                                    <constraint firstItem="rO2-2a-Mwd" firstAttribute="width" secondItem="UUF-ia-ayA" secondAttribute="width" id="eV0-W7-A1v"/>
+                                    <constraint firstItem="qCg-EA-5Eu" firstAttribute="width" secondItem="UUF-ia-ayA" secondAttribute="width" id="cn3-eK-AV1"/>
+                                    <constraint firstItem="rO2-2a-Mwd" firstAttribute="width" secondItem="UUF-ia-ayA" secondAttribute="width" id="twI-D0-EX3"/>
+                                    <constraint firstItem="eGo-78-C6J" firstAttribute="width" secondItem="UUF-ia-ayA" secondAttribute="width" id="yFi-z7-L4O"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -93,9 +102,10 @@
     </scenes>
     <resources>
         <image name="camera" width="2400" height="2400"/>
+        <image name="cigar" width="299" height="267"/>
         <image name="eyeglasses1" width="342" height="144"/>
         <image name="hat1" width="332" height="205"/>
-        <image name="home" width="38" height="36"/>
         <image name="mustache2" width="542" height="200"/>
+        <image name="person filler" width="128" height="128"/>
     </resources>
 </document>
