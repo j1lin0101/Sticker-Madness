@@ -14,9 +14,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var homePhoto: UIImageView!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     @IBAction func photoButtonPressed(sender: AnyObject) {
@@ -24,5 +25,21 @@ class ViewController: UIViewController {
             self.homePhoto.image = image
         })
     }
+    
+    @IBAction func mustachePressed(sender: AnyObject) {
+        let mustache = Sticker(image: UIImage(named: "mustache2"))
+        self.view.addSubview(mustache)
+    }
+    
+    @IBAction func hatPressed(sender: AnyObject) {
+        let hat = Sticker(image: UIImage(named: "hat1"))
+        self.view.addSubview(hat)
+    }
+    
+    @IBAction func glassesPressed(sender: AnyObject) {
+        let glasses = Sticker(image: UIImage(named: "eyeglasses1"))
+        self.view.addSubview(glasses)
+    }
+
 }
 

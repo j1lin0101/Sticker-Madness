@@ -45,14 +45,23 @@
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUF-ia-ayA">
                                         <rect key="frame" x="0.0" y="0.0" width="177" height="60"/>
                                         <state key="normal" image="eyeglasses1"/>
+                                        <connections>
+                                            <action selector="glassesPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZDg-0X-poE"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rO2-2a-Mwd">
-                                        <rect key="frame" x="202" y="0.0" width="176" height="60"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rO2-2a-Mwd">
+                                        <rect key="frame" x="202" y="0.0" width="177" height="60"/>
                                         <state key="normal" image="hat1"/>
+                                        <connections>
+                                            <action selector="hatPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dzI-VX-dqn"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCg-EA-5Eu">
-                                        <rect key="frame" x="403" y="0.0" width="177" height="60"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCg-EA-5Eu">
+                                        <rect key="frame" x="404" y="0.0" width="177" height="60"/>
                                         <state key="normal" image="mustache2"/>
+                                        <connections>
+                                            <action selector="mustachePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="phd-Pz-GMD"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
