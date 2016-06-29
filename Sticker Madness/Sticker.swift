@@ -16,6 +16,8 @@ class Sticker: UIImageView {
         self.userInteractionEnabled = true
         let pan  = UIPanGestureRecognizer(target: self, action: #selector(self.handlePan(_:)))
         self.addGestureRecognizer(pan)
+        let pinch = UIPinchGestureRecognizer(target: self, action: #selector(self.handlePinch(_:)))
+        self.addGestureRecognizer(pinch)
     }
     
     required init(coder aDecoder: NSCoder){
@@ -34,6 +36,14 @@ class Sticker: UIImageView {
             else {
                 print("no view")
             }
+        }
+    }
+    
+    func handlePinch(pinchGestureRecognizer : UIPinchGestureRecognizer!) {
+        if let view = pinchGestureRecognizer.view {
+            view.transform = CGAffineTransformScale(view.transform,
+                                                    pinchGestureRecognizer.scale, pinchGestureRecognizer.scale)
+            pinchGestureRecognizer.scale = 1
         }
     }
 }
